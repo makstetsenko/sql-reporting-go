@@ -19,13 +19,14 @@ type DbConnection struct {
 	Env      string `yaml:"env"`
 	Uid      string `yaml:"uid"`
 	Pwd      string `yaml:"pwd"`
+	Encrypt  string `yaml:"encrypt"`
 }
 
 func (c *DbConnection) GetConnectionString() string {
 	query := url.Values{}
 	query.Add("app name", "sql-reports-go")
 	query.Add("database", c.Database)
-	query.Add("encrypt", "disable")
+	query.Add("encrypt", c.Encrypt)
 
 	u := &url.URL{
 		Scheme:   "sqlserver",

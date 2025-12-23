@@ -4,3 +4,4 @@ connections:
     database: <YOUR DB NAME>
     uid: <YOUR USERNAME>
     pwd: <YOUR PASSWORD>
+    encrypt: true # false | 'disable'
