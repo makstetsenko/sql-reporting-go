@@ -1,0 +1,6 @@
+connections:
+  - env: my-local-env # Any environment name. This name uses only to organize reports in directories.
+    server: localhost # Server host
+    database: <YOUR DB NAME>
+    uid: <YOUR USERNAME>
+    pwd: <YOUR PASSWORD>
